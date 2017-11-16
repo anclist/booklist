@@ -1,7 +1,10 @@
 class BooksController < ApplicationController
 
 def index
-  #code
+  @books = Book.all
+  respond_to do |format|
+      format.html
+      end
 end
 
 end

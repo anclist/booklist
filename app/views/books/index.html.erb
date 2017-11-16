@@ -1,1 +1,9 @@
-Index
+<ul>
+  <% @books.each do |book| %>
+  <li>
+    <p><strong>Title:</strong> <%= book.title %></p>
+    <p><strong>Author:</strong><%= book.author %></p>
+  </li>
+  <% end %>
+
+</ul>
